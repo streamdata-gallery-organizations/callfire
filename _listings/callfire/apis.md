@@ -1,16 +1,14 @@
 ---
 name: CallFire
 x-slug: callfire
-description: CallFire is a cloud-based telephony company that provides voice and text
-  connectivity services. It offers the necessary tools for businesses to communicate
-  and market effectively. The company works to provide a diverse line of innovative
-  products that enable its users to get their messages delivered.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+description: Grow your business with virtual phone numbers, IVR, voice broadcasting,
+  mass text messaging services and power dialing. Try CallFire for FREE!
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
 x-kinRank: "9"
-x-alexaRank: ""
+x-alexaRank: "129466"
 tags: CallFire
-created: "2018-05-21"
-modified: "2018-05-21"
+created: "2018-05-25"
+modified: "2018-05-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/apis.md
 specificationVersion: "0.14"
 apis:
@@ -19,7 +17,7 @@ apis:
   description: To search for all calls sent or received by the user. Use "id=0" for
     the campaignId parameter to query for all calls sent through the POST /calls API.
     See [call states and results](https://developers.callfire.com/results-responses-errors.html)
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls
   tags: Calls
@@ -35,7 +33,7 @@ apis:
     a single recipient identified by phone number or contact id in CallFire system.
     You can attach user-defined attributes to a Call action via CallRecipient.attributes
     property, attributes are available in Call action response
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls
   tags: Calls
@@ -47,7 +45,7 @@ apis:
   description: Searches for all voice broadcasts created by user. Can query on label,
     name, and the current running status of the campaign. Returns a paged list of
     voice broadcasts
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts
   tags: Calls,Broadcasts
@@ -62,7 +60,7 @@ apis:
     a CallBroadcast in the message body to add details in a voice broadcast campaign.
     The campaign can be created without contacts and bare minimum configuration, but
     contacts will have to be added further on to use the campaign
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts
   tags: Calls,Broadcasts
@@ -73,7 +71,7 @@ apis:
   x-api-slug: callfire
   description: Returns a single CallBroadcast instance for a given call broadcast
     campaign id
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}
   tags: Calls,Broadcasts
@@ -85,7 +83,7 @@ apis:
   description: This operation lets the user modify the configuration of a voice broadcast
     campaign after call broadcast campaign is created. See CallBroadcast for more
     information on what can/can't be updated on this API
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}
   tags: Calls,Broadcasts
@@ -96,7 +94,7 @@ apis:
   x-api-slug: callfire
   description: Archives a voice broadcast (voice broadcast will be hidden in search
     results)
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}/archive
   tags: Calls,Broadcasts,Archive
@@ -107,7 +105,7 @@ apis:
   x-api-slug: callfire
   description: This endpoint will enable the user to page through all of the batches
     for a particular voice broadcast campaign
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}/batches
   tags: Calls,Broadcasts,Batches
@@ -123,7 +121,7 @@ apis:
     validation process, unlike in the recipients version of this API. That is why
     you can use the scrubDuplicates flag to remove duplicates from your batch. Batches
     may be added as a contact list id, a list of contact ids, or a list of numbers
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}/batches
   tags: Calls,Broadcasts,Batches
@@ -134,7 +132,7 @@ apis:
   x-api-slug: callfire
   description: This endpoint will enable the user to page through all calls for a
     particular call broadcast campaign
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}/calls
   tags: Calls,Broadcasts,Calls
@@ -148,7 +146,7 @@ apis:
     These contacts will not go through validation process, and will be acted upon
     as they are added. Recipients may be added as a list of contact ids, or list of
     numbers
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}/recipients
   tags: Calls,Broadcasts,Recipients
@@ -158,7 +156,7 @@ apis:
 - name: Callfire Start voice broadcast
   x-api-slug: callfire
   description: Start a voice broadcast
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}/start
   tags: Calls,Broadcasts,Start
@@ -169,7 +167,7 @@ apis:
   x-api-slug: callfire
   description: Returns broadcast statistics like total number of sent/received actions,
     total cost, number of remaining outbound actions, error count, etc
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}/stats
   tags: Calls,Broadcasts,Stats
@@ -179,7 +177,7 @@ apis:
 - name: Callfire Stop voice broadcast
   x-api-slug: callfire
   description: Stop a voice broadcast
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/broadcasts/{id}/stop
   tags: Calls,Broadcasts,Stop
@@ -190,7 +188,7 @@ apis:
   x-api-slug: callfire
   description: Returns metadata of recording of a particular call. Metadata contains
     a link to a MP3 recording
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/recordings/{id}
   tags: Calls,Recordings
@@ -203,19 +201,19 @@ apis:
   x-api-slug: callfire
   description: Returns an MP3 recording of particular call, response contains binary
     data, content type is 'audio/mpeg'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/recordings/{id}.mp3
   tags: Calls,Recordings.mp3
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/callsrecordingsidmp3-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/callsrecordingsid-mp3-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/callsrecordingsidmp3-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/callsrecordingsid-mp3-get-openapi.md
 - name: Callfire Find a specific call
   x-api-slug: callfire
   description: Returns a single Call instance for a given call id.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/{id}
   tags: Calls
@@ -226,7 +224,7 @@ apis:
   x-api-slug: callfire
   description: Returns a list of recordings metadata of particular call. Metadata
     contains link to a MP3 recording
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/{id}/recordings
   tags: Calls,Recordings
@@ -239,7 +237,7 @@ apis:
   x-api-slug: callfire
   description: Returns recording metadata of particular call. Metadata contains link
     to a MP3 recording
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/{id}/recordings/{name}
   tags: Calls,Recordings,Name
@@ -252,20 +250,20 @@ apis:
   x-api-slug: callfire
   description: Returns a MP3 recording of a particular call, response contains binary
     data, content type is 'audio/mpeg'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//calls/{id}/recordings/{name}.mp3
   tags: Calls,Recordings,Name.mp3
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/callsidrecordingsnamemp3-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/callsidrecordingsname-mp3-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/callsidrecordingsnamemp3-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/callsidrecordingsname-mp3-get-openapi.md
 - name: Callfire Find a specific batch
   x-api-slug: callfire
   description: Returns a single Batch instance for a given batch id. This API is useful
     for determining the state of a validating batch
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/batches/{id}
   tags: Campaigns,Batches
@@ -276,7 +274,7 @@ apis:
   x-api-slug: callfire
   description: Updates a single Batch instance, currently batch can only be turned
     "on/off"
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/batches/{id}
   tags: Campaigns,Batches
@@ -287,7 +285,7 @@ apis:
   x-api-slug: callfire
   description: To find all campaign sounds which were created by user. Returns all
     sounds available to be used in campaigns
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/sounds
   tags: Campaigns,Sounds
@@ -299,7 +297,7 @@ apis:
   description: Use this API to create a sound via a phone call. Provide the required
     phone number in the CallCreateSound object inside the request, and user will receive
     a call shortly after with instructions on how to record a sound over the phone.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/sounds/calls
   tags: Campaigns,Sounds,Calls
@@ -309,7 +307,7 @@ apis:
 - name: Callfire Add sound via file
   x-api-slug: callfire
   description: Create a campaign sound file via a supplied .mp3 or .wav file
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/sounds/files
   tags: Campaigns,Sounds,Files
@@ -321,7 +319,7 @@ apis:
   description: 'Use this API to create a sound file via a supplied string of text.
     Add a text in the TextToSpeech.message field, and pick a voice in the TextToSpeech.voice
     field. Available voices are: MALE1, FEMALE1, FEMALE2, SPANISH1, FRENCHCANADIAN1'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/sounds/tts
   tags: Campaigns,Sounds,Tts
@@ -334,7 +332,7 @@ apis:
     id, this operation does not delete sound completely, it sets sound status to ARCHIVED
     which means that sound will no longer appear in 'find' operation results, but
     still accessible via 'get' operation
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/sounds/{id}
   tags: Campaigns,Sounds
@@ -345,7 +343,7 @@ apis:
   x-api-slug: callfire
   description: Returns a single CampaignSound instance for a given sound id in campaign.
     This is a meta data to the sounds. No audio data is returned from this API
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/sounds/{id}
   tags: Campaigns,Sounds
@@ -356,29 +354,29 @@ apis:
   x-api-slug: callfire
   description: Download the MP3 version of a hosted file. This is an audio data endpoint.
     Returns binary response of the 'audio/mpeg' content type
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/sounds/{id}.mp3
   tags: Campaigns,Sounds.mp3
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/campaignssoundsidmp3-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/campaignssoundsid-mp3-get-openapi.md
 - name: Callfire Download a WAV sound
   x-api-slug: callfire
   description: Download the WAV version of the hosted file. This is an audio data
     endpoint. Returns binary response of the 'audio/mpeg' content type
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//campaigns/sounds/{id}.wav
   tags: Campaigns,Sounds.wav
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/campaignssoundsidwav-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/campaignssoundsid-wav-get-openapi.md
 - name: Callfire Find contacts
   x-api-slug: callfire
   description: Find user's contacts by id, contact list, or on any property name.
     Returns a paged list of contacts
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts
   tags: Contacts
@@ -389,7 +387,7 @@ apis:
   x-api-slug: callfire
   description: Creates contacts in CallFire system. These contacts are not validated
     on creation. They will be validated upon being added to a campaign
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts
   tags: Contacts
@@ -401,7 +399,7 @@ apis:
   description: Searches for all Do Not Contact (DNC) objects created by user. These
     DoNotContact entries only affect calls/texts/campaigns on this account. Returns
     a paged list of DoNotContact objects
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/dncs
   tags: Contacts,Dncs
@@ -412,7 +410,7 @@ apis:
   x-api-slug: callfire
   description: Add or update a list of Do Not Contact (DNC) contact entries. Can toggle
     whether the DNCs are enabled for calls/texts.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/dncs
   tags: Contacts,Dncs
@@ -422,7 +420,7 @@ apis:
 - name: Callfire Delete do not contact (dnc) numbers contained in source.
   x-api-slug: callfire
   description: Delete Do Not Contact (DNC) contact entries contained in source.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/dncs/sources/{source}
   tags: Contacts,Dncs,Sources,Source
@@ -433,7 +431,7 @@ apis:
   x-api-slug: callfire
   description: Searches for a UniversalDoNotContact object for a given phone number.
     Shows whether inbound/outbound actions are allowed for a given number
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/dncs/universals/{toNumber}
   tags: Contacts,Dncs,Universals,ToNumber
@@ -444,7 +442,7 @@ apis:
     as list of numbers
   x-api-slug: callfire
   description: Delete a Do Not Contact (DNC) contact entry.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/dncs/{number}
   tags: Contacts,Dncs,Number
@@ -455,7 +453,7 @@ apis:
   x-api-slug: callfire
   description: Get Do Not Contact (DNC) object create by user. This DoNotContact entry
     only affects calls/texts/campaigns on this account.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/dncs/{number}
   tags: Contacts,Dncs,Number
@@ -466,7 +464,7 @@ apis:
   x-api-slug: callfire
   description: Update a Do Not Contact (DNC) contact entry. Can toggle whether the
     DNC is enabled for calls/texts.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/dncs/{number}
   tags: Contacts,Dncs,Number
@@ -477,7 +475,7 @@ apis:
   x-api-slug: callfire
   description: Searches for all contact lists which are available for the current
     user. Returns a paged list of contact lists
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists
   tags: Contacts,Lists
@@ -496,7 +494,7 @@ apis:
     can configure to keep/merge or remove contacts which do not complies these rules.
     If contacts were not added to a contact list after the validation, this means
     the data needs to be properly formatted and corrected before calling this API
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists
   tags: Contacts,Lists
@@ -507,7 +505,7 @@ apis:
   x-api-slug: callfire
   description: Creates a contact list to be used with campaigns through uploading
     a .csv file. Returns the id of created list
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists/upload
   tags: Contacts,Lists,Upload
@@ -517,7 +515,7 @@ apis:
 - name: Callfire Delete a contact list
   x-api-slug: callfire
   description: Deletes a contact list, included contacts will not be deleted.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists/{id}
   tags: Contacts,Lists
@@ -527,7 +525,7 @@ apis:
 - name: Callfire Find a specific contact list
   x-api-slug: callfire
   description: Returns a single ContactList instance for a given contact list id
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists/{id}
   tags: Contacts,Lists
@@ -537,7 +535,7 @@ apis:
 - name: Callfire Update a contact list
   x-api-slug: callfire
   description: Updates contact list instance.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists/{id}
   tags: Contacts,Lists
@@ -548,7 +546,7 @@ apis:
   x-api-slug: callfire
   description: Deletes contacts from a contact list. List the contact ids in request
     to delete multiple contacts with one request.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists/{id}/items
   tags: Contacts,Lists,Items
@@ -559,7 +557,7 @@ apis:
   x-api-slug: callfire
   description: Searches for all entries in a contact list with specified id. Returns
     a paged list of contact entries
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists/{id}/items
   tags: Contacts,Lists,Items
@@ -571,7 +569,7 @@ apis:
   description: 'Adds contacts to a contact list. Available contact sources are: list
     of the contact entities, list of ids of existing contacts in user''s account,
     list of phone numbers in E.164 format (11-digits)'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists/{id}/items
   tags: Contacts,Lists,Items
@@ -581,7 +579,7 @@ apis:
 - name: Callfire Delete a contact from a contact list
   x-api-slug: callfire
   description: Deletes a single contact from a contact list
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/lists/{id}/items/{contactId}
   tags: Contacts,Lists,Items,ContactId
@@ -591,7 +589,7 @@ apis:
 - name: Callfire Delete a contact
   x-api-slug: callfire
   description: Deletes a contact instance from account
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/{id}
   tags: Contacts
@@ -603,7 +601,7 @@ apis:
   description: Returns a Contact instance for a given contact id. Deleted contacts
     can be still retrieved but will be marked as deleted. Deleted contacts will not
     be shown in search request.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/{id}
   tags: Contacts
@@ -613,7 +611,7 @@ apis:
 - name: Callfire Update a contact
   x-api-slug: callfire
   description: Updates a single contact instance with id specified
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/{id}
   tags: Contacts
@@ -624,7 +622,7 @@ apis:
   x-api-slug: callfire
   description: Searches for all texts and calls attributed to a contact. Returns a
     list of calls and texts a contact has been involved with
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//contacts/{id}/history
   tags: Contacts,History
@@ -637,7 +635,7 @@ apis:
     If a keyword appears in the response, it is available for purchase. List the 'keywords'
     in a query parameter to search for multiple keywords (at least one keyword should
     be sent in request)
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//keywords
   tags: Keywords
@@ -650,7 +648,7 @@ apis:
   x-api-slug: callfire
   description: Searches for all keywords owned by user. A keyword lease is the ownership
     information involving a keyword
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//keywords/leases
   tags: Keywords,Leases
@@ -662,7 +660,7 @@ apis:
 - name: Callfire Find a specific lease
   x-api-slug: callfire
   description: Searches for all keywords owned by user
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//keywords/leases/{keyword}
   tags: Keywords,Leases,Keyword
@@ -674,7 +672,7 @@ apis:
 - name: Callfire Update a lease
   x-api-slug: callfire
   description: Updates a keyword lease. Turns the autoRenew on/off.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//keywords/leases/{keyword}
   tags: Keywords,Leases,Keyword
@@ -685,7 +683,7 @@ apis:
   x-api-slug: callfire
   description: Searches for the specific keyword to purchase on the CallFire platform.
     Returns 'true' if keyword is available.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//keywords/{keyword}/available
   tags: Keywords,Keyword,Available
@@ -696,7 +694,7 @@ apis:
   x-api-slug: callfire
   description: Searches for the user account details. Details include name, email,
     and basic account permissions
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/account
   tags: Me,Account
@@ -707,7 +705,7 @@ apis:
   x-api-slug: callfire
   description: Searches for all credentials generated by user. Returns a paged list
     of the API credentials. Only ACCOUNT_HOLDER can invoke this API
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/api/credentials
   tags: Me,Api,Credentials
@@ -720,7 +718,7 @@ apis:
     full CallFire account credentials to be used, authenticated using Basic Authentication.
     At the moment user provides only the name for the credentials. The generated credentials
     can be used to access any CallFire APIs
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/api/credentials
   tags: Me,Api,Credentials
@@ -731,7 +729,7 @@ apis:
   x-api-slug: callfire
   description: Deletes a specified API credential. Currently, removes the ability
     to access the API. Only ACCOUNT_HOLDER can invoke this API
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/api/credentials/{id}
   tags: Me,Api,Credentials
@@ -742,7 +740,7 @@ apis:
   x-api-slug: callfire
   description: Returns an API credential instance for a given api credential id. Only
     ACCOUNT_HOLDER can invoke this API
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/api/credentials/{id}
   tags: Me,Api,Credentials
@@ -753,7 +751,7 @@ apis:
   x-api-slug: callfire
   description: Find credit usage for the user. Returns credits usage for time period
     specified or if unspecified then total for all time.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/billing/credit-usage
   tags: Me,Billing,Credit-usage
@@ -766,7 +764,7 @@ apis:
   x-api-slug: callfire
   description: Searches for the data of a billing plan usage for the user. Returns
     the data of a billing plan usage for the current month
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/billing/plan-usage
   tags: Me,Billing,Plan-usage
@@ -780,7 +778,7 @@ apis:
   description: Returns a list of verified caller ids. If the number is not shown in
     the list, then it is not verified. In this case sending of a verification code
     is required.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/callerids
   tags: Me,Callerids
@@ -792,7 +790,7 @@ apis:
   description: Generates and sends a verification code to the phone number provided
     in the path. The verification code is delivered via a phone call. This code needs
     to be submitted to the verify caller id API endpoint to complete verification.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/callerids/{callerid}
   tags: Me,Callerids,Callerid
@@ -803,7 +801,7 @@ apis:
   x-api-slug: callfire
   description: With the verification code received from the Create caller id endpoint,
     a call to this endpoint is required to finish verification
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//me/callerids/{callerid}/verification-code
   tags: Me,Callerids,Callerid,Verification-code
@@ -814,7 +812,7 @@ apis:
   x-api-slug: callfire
   description: 'Uploads media file to account, acceptable media formats: bmp, gif,
     jpg, m4a, mp3, mp4, png, wav'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//media
   tags: Media
@@ -826,19 +824,19 @@ apis:
   description: 'Download a media file. Available types of files: bmp, gif, jpg, m4a,
     mp3, mp4, png, wav. Content type in response depends on ''extension'' parameter,
     e.g. image/jpeg, image/png, audio/mp3, etc'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//media/public/{key}.{extension}
   tags: Media,Public,Key.extension
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/mediapublickeyextension-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/mediapublickey-extension-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/mediapublickeyextension-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/mediapublickey-extension-get-openapi.md
 - name: Callfire Get a specific media
   x-api-slug: callfire
   description: Get media resource by id
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//media/{id}
   tags: Media
@@ -850,17 +848,17 @@ apis:
   description: 'Download a media file. Available types of files: bmp, gif, jpg, m4a,
     mp3, mp4, png, wav. Content type in response depends on ''extension'' parameter,
     e.g. image/jpeg, image/png, audio/mp3, etc'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//media/{id}.{extension}
   tags: Media,Extensions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/mediaidextension-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/mediaid-extension-get-openapi.md
 - name: Callfire Download a MP3 media
   x-api-slug: callfire
   description: Download a MP3 media, endpoint returns application/binary content-type
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//media/{id}/file
   tags: Media,File
@@ -872,7 +870,7 @@ apis:
   description: Searches for all numbers leased by account user. This API is useful
     for finding all numbers currently owned by the user. Returns a paged list of number
     leases.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/leases
   tags: Numbers,Leases
@@ -885,7 +883,7 @@ apis:
   x-api-slug: callfire
   description: Searches for all number lease configs for the user. Returns a paged
     list of NumberConfig
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/leases/configs
   tags: Numbers,Leases,Configs
@@ -897,7 +895,7 @@ apis:
 - name: Callfire Find a specific lease config
   x-api-slug: callfire
   description: Returns a single NumberConfig instance for a given number lease
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/leases/configs/{number}
   tags: Numbers,Leases,Configs,Number
@@ -913,7 +911,7 @@ apis:
     configuration allows you to track the incoming calls, to analyze and to respond
     customers using sms or voice replies. For more information see [call tracking
     page](https://www.callfire.com/products/call-tracking)
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/leases/configs/{number}
   tags: Numbers,Leases,Configs,Number
@@ -923,7 +921,7 @@ apis:
 - name: Callfire Find a specific lease
   x-api-slug: callfire
   description: Returns a single NumberLease instance for a given number
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/leases/{number}
   tags: Numbers,Leases,Number
@@ -934,7 +932,7 @@ apis:
   x-api-slug: callfire
   description: Updates a number lease instance. Ability to turn on/off autoRenew and
     toggle call/text features for a particular number
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/leases/{number}
   tags: Numbers,Leases,Number
@@ -946,7 +944,7 @@ apis:
   description: Searches for numbers available for purchase in CallFire local numbers
     catalog . At least one additional parameter is required. User may filter local
     numbers by their region information.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/local
   tags: Numbers,Local
@@ -958,7 +956,7 @@ apis:
   description: Searches for region information. Use this API to obtain detailed region
     information that can be used to query for more specific phone numbers than a general
     query.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/regions
   tags: Numbers,Regions
@@ -969,7 +967,7 @@ apis:
   x-api-slug: callfire
   description: Searches for the toll free numbers which are available for purchase
     in the CallFire catalog
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//numbers/tollfree
   tags: Numbers,Tollfree
@@ -981,7 +979,7 @@ apis:
   description: Purchase keywords. Send a list of available keywords into this API
     to purchase them using CallFire credits. Make sure the account has enough credits
     before trying to purchase the keywords
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//orders/keywords
   tags: Orders,Keywords
@@ -995,7 +993,7 @@ apis:
     by bulk query. Set the list of numbers to purchase by list. Available numbers
     will be purchased using CallFire credits owned by the user. Make sure the account
     has enough credits before trying to purchase
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//orders/numbers
   tags: Orders,Numbers
@@ -1006,7 +1004,7 @@ apis:
   x-api-slug: callfire
   description: Returns a single NumberOrder instance for a given order id. Order contains
     information about purchased keywords, local, toll-free numbers
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//orders/{id}
   tags: Orders
@@ -1018,7 +1016,7 @@ apis:
   description: Searches for texts sent or received by user. Use "campaignId=0" parameter
     to query for all texts sent through the POST /texts API. See [call states and
     results](https://developers.callfire.com/results-responses-errors.html)
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts
   tags: Texts
@@ -1031,7 +1029,7 @@ apis:
   x-api-slug: callfire
   description: Use the /texts API to send individual texts quickly. By default all
     texts are going out from CallFire's dedicated short code 67076
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts
   tags: Texts
@@ -1042,7 +1040,7 @@ apis:
   x-api-slug: callfire
   description: Find all text autoreplies created by user. Returns a paged list of
     TextAutoReply
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/auto-replys
   tags: Texts,Auto-replys
@@ -1055,7 +1053,7 @@ apis:
     numbers and keywords. You can set a general auto reply for anyone who texts your
     number, keyword, and/or include a text to match, so that the auto reply would
     be sent only to those who text the matched text
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/auto-replys
   tags: Texts,Auto-replys
@@ -1066,7 +1064,7 @@ apis:
   x-api-slug: callfire
   description: Deletes a text auto reply and removes the configuration. Can not delete
     a TextAutoReply which is currently active for a campaign
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/auto-replys/{id}
   tags: Texts,Auto-replys
@@ -1077,7 +1075,7 @@ apis:
   x-api-slug: callfire
   description: Returns a single TextAutoReply instance for a given text auto reply
     id
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/auto-replys/{id}
   tags: Texts,Auto-replys
@@ -1089,7 +1087,7 @@ apis:
   description: Searches for all text broadcasts created by user. Can query on label,
     name, and the current running status of the campaign. Returns a paged list of
     text broadcasts
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts
   tags: Texts,Broadcasts
@@ -1103,7 +1101,7 @@ apis:
     A campaign can be created without contacts and with bare minimum configuration,
     but contacts have to be added further on to use the campaign. It supports scheduling,
     retry logic, pattern-based messages.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts
   tags: Texts,Broadcasts
@@ -1114,7 +1112,7 @@ apis:
   x-api-slug: callfire
   description: Returns a single TextBroadcast instance for a given text broadcast
     id
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}
   tags: Texts,Broadcasts
@@ -1125,7 +1123,7 @@ apis:
   x-api-slug: callfire
   description: Allows modifying the configuration of existing text broadcast campaign.
     See TextBroadcast for more information on what can/can't be updated on this API
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}
   tags: Texts,Broadcasts
@@ -1135,7 +1133,7 @@ apis:
 - name: Callfire Archive text broadcast
   x-api-slug: callfire
   description: Archives a text broadcast (and hides it in the search results)
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}/archive
   tags: Texts,Broadcasts,Archive
@@ -1146,7 +1144,7 @@ apis:
   x-api-slug: callfire
   description: This endpoint will enable the user to page through all of the batches
     for a particular text broadcast campaign
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}/batches
   tags: Texts,Broadcasts,Batches
@@ -1160,7 +1158,7 @@ apis:
     (unlike in the recipients version of this API). That is why using of a scrubDuplicates
     flag remove duplicates from your batch. Batches may be added as a contact list
     id, a list of contact ids, or a list of numbers
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}/batches
   tags: Texts,Broadcasts,Batches
@@ -1174,7 +1172,7 @@ apis:
     broadcast campaign. These contacts will not go through validation process, and
     will be acted upon as they are added. Recipients may be added as a list of contact
     ids, or list of numbers
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}/recipients
   tags: Texts,Broadcasts,Recipients
@@ -1184,7 +1182,7 @@ apis:
 - name: Callfire Start text broadcast
   x-api-slug: callfire
   description: Starts a text broadcast
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}/start
   tags: Texts,Broadcasts,Start
@@ -1195,7 +1193,7 @@ apis:
   x-api-slug: callfire
   description: 'Returns the broadcast statistics. Example: total number of the sent/received
     actions, total cost, number of remaining outbound actions, error count, etc'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}/stats
   tags: Texts,Broadcasts,Stats
@@ -1205,7 +1203,7 @@ apis:
 - name: Callfire Stop text broadcast
   x-api-slug: callfire
   description: Stops a text broadcast
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}/stop
   tags: Texts,Broadcasts,Stop
@@ -1216,7 +1214,7 @@ apis:
   x-api-slug: callfire
   description: This endpoint will enable the user to page through all of the texts
     for a particular text broadcast campaign
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/broadcasts/{id}/texts
   tags: Texts,Broadcasts,Texts
@@ -1226,7 +1224,7 @@ apis:
 - name: Callfire Find a specific text
   x-api-slug: callfire
   description: Returns a single Text instance for a given text id
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//texts/{id}
   tags: Texts
@@ -1238,7 +1236,7 @@ apis:
   description: Searches all webhooks available for a current user. Searches by name,
     resource, event, callback URL, or whether they are enabled. Returns a paged list
     of Webhooks
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//webhooks
   tags: Webhooks
@@ -1261,7 +1259,7 @@ apis:
     Webhooks support secret token which is used as signing key to HmacSHA1 hash of
     json payload which is returned in ''X-CallFire-Signature'' header. This header
     can be used to verify callback POST is coming from CallFire. See [security guide](https://developers.callfire.com/security-guide.html)'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//webhooks
   tags: Webhooks
@@ -1275,7 +1273,7 @@ apis:
     ''finished''], ''TextBroadcast'': [''started'', ''stopped'', ''finished''], ''OutboundCall'':
     [''finished''], ''InboundCall'': [''finished''], ''OutboundText'': [''finished''],
     ''InboundText'': [''finished''], ''ContactList'': [''validationFinished'', ''validationFailed'']'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//webhooks/resources
   tags: Webhooks,Resources
@@ -1285,7 +1283,7 @@ apis:
 - name: Callfire Find specific webhook resource
   x-api-slug: callfire
   description: Returns information about supported events for a given webhook resource
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//webhooks/resources/{resource}
   tags: Webhooks,Resources,Resource
@@ -1295,7 +1293,7 @@ apis:
 - name: Callfire Delete a webhook
   x-api-slug: callfire
   description: Deletes a webhook instance. Will be removed permanently
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//webhooks/{id}
   tags: Webhooks
@@ -1305,7 +1303,7 @@ apis:
 - name: Callfire Find a specific webhook
   x-api-slug: callfire
   description: Returns a single Webhook instance for a given webhook id
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//webhooks/{id}
   tags: Webhooks
@@ -1315,7 +1313,7 @@ apis:
 - name: Callfire Update a webhook
   x-api-slug: callfire
   description: Updates the information in existing webhook
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2//webhooks/{id}
   tags: Webhooks
@@ -1324,11 +1322,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/webhooksid-put-openapi.md
 - name: Callfire
   x-api-slug: callfire
-  description: CallFire is a cloud-based telephony company that provides voice and
-    text connectivity services. It offers the necessary tools for businesses to communicate
-    and market effectively. The company works to provide a diverse line of innovative
-    products that enable its users to get their messages delivered.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/CallFire_Logo.png
+  description: Grow your business with virtual phone numbers, IVR, voice broadcasting,
+    mass text messaging services and power dialing. Try CallFire for FREE!
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2
   tags: CallFire
@@ -1336,7 +1332,7 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/callfire/master/_listings/callfire/openapi.md
 x-common:
-- type: x-net-sdk
+- type: x--net-sdk
   url: https://github.com/CallFire/CallFire-CSharp-SDK
 - type: x-account-billing
   url: https://answers.callfire.com/hc/en-us/sections/200166268-Billing
@@ -1358,12 +1354,16 @@ x-common:
   url: https://www.callfire.com/contact
 - type: x-crunchbase
   url: https://www.crunchbase.com/organization/callfire
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/callfire
 - type: x-developer
   url: https://www.callfire.com/api-documentation
 - type: x-documentation
   url: https://www.callfire.com/api-documentation/rest/version/1.1
 - type: x-drupal-plugin
   url: https://github.com/CallFire/CallFire-Drupal-Integration
+- type: x-email
+  url: answers@callfire.com
 - type: x-email
   url: support@callfire.com
 - type: x-facebook

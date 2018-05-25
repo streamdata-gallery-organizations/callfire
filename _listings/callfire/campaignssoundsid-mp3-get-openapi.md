@@ -3,9 +3,9 @@ swagger: "2.0"
 x-collection-name: CallFire
 x-complete: 0
 info:
-  title: Callfire Get call recordings for a call
-  description: Returns a list of recordings metadata of particular call. Metadata
-    contains link to a MP3 recording
+  title: Callfire Download a MP3 sound
+  description: Download the MP3 version of a hosted file. This is an audio data endpoint.
+    Returns binary response of the 'audio/mpeg' content type
   termsOfService: https://www.callfire.com/legal/terms
   contact:
     name: CallFire
@@ -511,6 +511,258 @@ paths:
       tags:
       - Calls
       - Recordings
+  /calls/{id}/recordings/{name}:
+    get:
+      summary: Get call recording by name
+      description: Returns recording metadata of particular call. Metadata contains
+        link to a MP3 recording
+      operationId: getCallRecordingByName
+      x-api-path-slug: callsidrecordingsname-get
+      parameters:
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      - in: path
+        name: id
+        description: An id of a call
+      - in: path
+        name: name
+        description: A name of a recording
+      responses:
+        200:
+          description: OK
+      tags:
+      - Calls
+      - Recordings
+      - Name
+  /calls/{id}/recordings/{name}.mp3:
+    get:
+      summary: Get call mp3 recording by name
+      description: Returns a MP3 recording of a particular call, response contains
+        binary data, content type is 'audio/mpeg'
+      operationId: getCallRecordingMp3ByName
+      x-api-path-slug: callsidrecordingsname-mp3-get
+      parameters:
+      - in: path
+        name: id
+        description: An id of a call
+      - in: path
+        name: name
+        description: A name of a recording
+      responses:
+        200:
+          description: OK
+      tags:
+      - Calls
+      - Recordings
+      - Name.mp3
+  /campaigns/batches/{id}:
+    get:
+      summary: Find a specific batch
+      description: Returns a single Batch instance for a given batch id. This API
+        is useful for determining the state of a validating batch
+      operationId: getCampaignBatch
+      x-api-path-slug: campaignsbatchesid-get
+      parameters:
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      - in: path
+        name: id
+        description: An id of a batch
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Batches
+    put:
+      summary: Update a batch
+      description: Updates a single Batch instance, currently batch can only be turned
+        "on/off"
+      operationId: updateCampaignBatch
+      x-api-path-slug: campaignsbatchesid-put
+      parameters:
+      - in: body
+        name: body
+        description: A batch instance
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: id
+        description: An id of a batch to update
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Batches
+  /campaigns/sounds:
+    get:
+      summary: Find sounds
+      description: To find all campaign sounds which were created by user. Returns
+        all sounds available to be used in campaigns
+      operationId: findCampaignSounds
+      x-api-path-slug: campaignssounds-get
+      parameters:
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      - in: query
+        name: filter
+        description: Name of a file to search for
+      - in: query
+        name: includeArchived
+        description: Includes ARCHIVED sounds for true value
+      - in: query
+        name: includePending
+        description: Includes UPLOAD/RECORDING sounds for true value
+      - in: query
+        name: includeScrubbed
+        description: Includes SCRUBBED sounds for true value
+      - in: query
+        name: limit
+        description: To set the maximum number of records to return in a paged list
+          response
+      - in: query
+        name: offset
+        description: Offset to the start of a given page
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Sounds
+  /campaigns/sounds/calls:
+    post:
+      summary: Add sound via call
+      description: Use this API to create a sound via a phone call. Provide the required
+        phone number in the CallCreateSound object inside the request, and user will
+        receive a call shortly after with instructions on how to record a sound over
+        the phone.
+      operationId: postCallCampaignSound
+      x-api-path-slug: campaignssoundscalls-post
+      parameters:
+      - in: body
+        name: body
+        description: Request object containing the name of a new campaign sound and
+          phone number to call up
+        schema:
+          $ref: '#/definitions/holder'
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Sounds
+      - Calls
+  /campaigns/sounds/files:
+    post:
+      summary: Add sound via file
+      description: Create a campaign sound file via a supplied .mp3 or .wav file
+      operationId: postFileCampaignSound
+      x-api-path-slug: campaignssoundsfiles-post
+      parameters:
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      - in: formData
+        name: file
+        description: A sound file encoded in binary form
+      - in: formData
+        name: name
+        description: Optional name of a sound file, if the name is empty than it will
+          be taken from a file
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Sounds
+      - Files
+  /campaigns/sounds/tts:
+    post:
+      summary: Add sound via text-to-speech
+      description: 'Use this API to create a sound file via a supplied string of text.
+        Add a text in the TextToSpeech.message field, and pick a voice in the TextToSpeech.voice
+        field. Available voices are: MALE1, FEMALE1, FEMALE2, SPANISH1, FRENCHCANADIAN1'
+      operationId: postTTSCampaignSound
+      x-api-path-slug: campaignssoundstts-post
+      parameters:
+      - in: body
+        name: body
+        description: textToSpeech
+        schema:
+          $ref: '#/definitions/holder'
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Sounds
+      - Tts
+  /campaigns/sounds/{id}:
+    delete:
+      summary: Delete a specific sound
+      description: Deletes a single campaign sound instance for a specific campaign
+        sound id, this operation does not delete sound completely, it sets sound status
+        to ARCHIVED which means that sound will no longer appear in 'find' operation
+        results, but still accessible via 'get' operation
+      operationId: deleteCampaignSound
+      x-api-path-slug: campaignssoundsid-delete
+      parameters:
+      - in: path
+        name: id
+        description: An id of a campaign sound
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Sounds
+    get:
+      summary: Find a specific sound
+      description: Returns a single CampaignSound instance for a given sound id in
+        campaign. This is a meta data to the sounds. No audio data is returned from
+        this API
+      operationId: getCampaignSound
+      x-api-path-slug: campaignssoundsid-get
+      parameters:
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      - in: path
+        name: id
+        description: An id of a sound campaign
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Sounds
+  /campaigns/sounds/{id}.mp3:
+    get:
+      summary: Download a MP3 sound
+      description: Download the MP3 version of a hosted file. This is an audio data
+        endpoint. Returns binary response of the 'audio/mpeg' content type
+      operationId: getCampaignSoundDataMp3
+      x-api-path-slug: campaignssoundsid-mp3-get
+      parameters:
+      - in: path
+        name: id
+        description: An id of a campaign sound
+      responses:
+        200:
+          description: OK
+      tags:
+      - Campaigns
+      - Sounds.mp3
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

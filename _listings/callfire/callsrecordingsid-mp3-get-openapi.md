@@ -3,9 +3,9 @@ swagger: "2.0"
 x-collection-name: CallFire
 x-complete: 0
 info:
-  title: Callfire Get call recordings for a call
-  description: Returns a list of recordings metadata of particular call. Metadata
-    contains link to a MP3 recording
+  title: Callfire Get call recording in mp3 format
+  description: Returns an MP3 recording of particular call, response contains binary
+    data, content type is 'audio/mpeg'
   termsOfService: https://www.callfire.com/legal/terms
   contact:
     name: CallFire
@@ -473,44 +473,6 @@ paths:
       tags:
       - Calls
       - Recordings.mp3
-  /calls/{id}:
-    get:
-      summary: Find a specific call
-      description: Returns a single Call instance for a given call id.
-      operationId: getCall
-      x-api-path-slug: callsid-get
-      parameters:
-      - in: query
-        name: fields
-        description: Limit fields received in response
-      - in: path
-        name: id
-        description: An id of a call
-      responses:
-        200:
-          description: OK
-      tags:
-      - Calls
-  /calls/{id}/recordings:
-    get:
-      summary: Get call recordings for a call
-      description: Returns a list of recordings metadata of particular call. Metadata
-        contains link to a MP3 recording
-      operationId: getCallRecordings
-      x-api-path-slug: callsidrecordings-get
-      parameters:
-      - in: query
-        name: fields
-        description: Limit fields received in response
-      - in: path
-        name: id
-        description: An id of a call
-      responses:
-        200:
-          description: OK
-      tags:
-      - Calls
-      - Recordings
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

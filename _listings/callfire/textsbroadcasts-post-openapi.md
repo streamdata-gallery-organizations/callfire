@@ -465,7 +465,7 @@ paths:
       description: Returns an MP3 recording of particular call, response contains
         binary data, content type is 'audio/mpeg'
       operationId: getCallRecordingMp3
-      x-api-path-slug: callsrecordingsidmp3-get
+      x-api-path-slug: callsrecordingsid-mp3-get
       parameters:
       - in: path
         name: id
@@ -544,7 +544,7 @@ paths:
       description: Returns a MP3 recording of a particular call, response contains
         binary data, content type is 'audio/mpeg'
       operationId: getCallRecordingMp3ByName
-      x-api-path-slug: callsidrecordingsnamemp3-get
+      x-api-path-slug: callsidrecordingsname-mp3-get
       parameters:
       - in: path
         name: id
@@ -755,7 +755,7 @@ paths:
       description: Download the MP3 version of a hosted file. This is an audio data
         endpoint. Returns binary response of the 'audio/mpeg' content type
       operationId: getCampaignSoundDataMp3
-      x-api-path-slug: campaignssoundsidmp3-get
+      x-api-path-slug: campaignssoundsid-mp3-get
       parameters:
       - in: path
         name: id
@@ -772,7 +772,7 @@ paths:
       description: Download the WAV version of the hosted file. This is an audio data
         endpoint. Returns binary response of the 'audio/mpeg' content type
       operationId: getCampaignSoundDataWav
-      x-api-path-slug: campaignssoundsidwav-get
+      x-api-path-slug: campaignssoundsid-wav-get
       parameters:
       - in: path
         name: id
@@ -1620,7 +1620,7 @@ paths:
         m4a, mp3, mp4, png, wav. Content type in response depends on ''extension''
         parameter, e.g. image/jpeg, image/png, audio/mp3, etc'
       operationId: getMediaDataByKey
-      x-api-path-slug: mediapublickeyextension-get
+      x-api-path-slug: mediapublickey-extension-get
       parameters:
       - in: path
         name: extension
@@ -1661,7 +1661,7 @@ paths:
         m4a, mp3, mp4, png, wav. Content type in response depends on ''extension''
         parameter, e.g. image/jpeg, image/png, audio/mp3, etc'
       operationId: getMediaData
-      x-api-path-slug: mediaidextension-get
+      x-api-path-slug: mediaid-extension-get
       parameters:
       - in: path
         name: extension
