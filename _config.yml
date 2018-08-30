@@ -4,7 +4,7 @@ url: callfire.streamdata.gallery
 tag: CallFire
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery-entities
+github_user: streamdata-gallery-topics
 github_repo: callfire
 github_branch: master
 collections:
